@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2> Welcome </h2>
+        <% include ../public/partials/messages %>
+        <form method="POST" action="/signup">
+            <input type="text"     name="firstName">
+            <input type="text"     name="lastName">
+            <input type="email"    name="email">
+            <input type="password" name="password">
+            <input type="password" name="password2">
+            <input type="submit" > 
+        </form>
+
+        <a href="/auth">google+</a>
+    </body>
+</html>

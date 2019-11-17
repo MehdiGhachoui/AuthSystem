@@ -1,0 +1,18 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Oauth</title>
+    </head>
+    <body>
+
+        <%if (user.isVerified = false && !user.googleID ){%>
+            <p> verification email has been sent to <%= user.email%> </p>
+        <%}%>
+        <h1>Welcome Home  , <%= user.firstName %> </h1>
+
+        <a href="/logout">logout</a>
+        
+    </body>
+</html>
